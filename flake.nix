@@ -21,12 +21,17 @@
   rec {
     nixosModules = {
 
-      system-baseline = {inputs, config, ... }: {
+      system-baseline = {inputs, config, pkgs, ... }: {
         imports = [
           ./nix_conf.nix
           ./locale.nix
           ./contexts/output/networking/default.nix
           ./contexts/output/security/default.nix
+        ];
+        home-manager.enable = true;
+        systemd.user.startServices = "sd-switch";
+        environment.systemPackages = [
+          pkgs.nixos-generators
         ];
       };
 

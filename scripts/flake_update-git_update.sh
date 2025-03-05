@@ -2,5 +2,5 @@
 cd ..
 nix flake update --extra-experimental-features "nix-command flakes"
 git add .
-git commit -S -a -m "Import of all existing settings."
+git commit -S -a -m "Provide updates to Users, Hosts, and other small changes."
 git push
