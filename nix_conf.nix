@@ -15,12 +15,6 @@
         experimental-features = "nix-command flakes";
       };
     };
-    environment = {
-      systemPackages = with pkgs; [
-        home-manager
-        deploy-rs
-      ];
-    };
 
     nixpkgs = {
       config = {

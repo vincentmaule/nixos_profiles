@@ -28,8 +28,6 @@
           ./contexts/output/networking/default.nix
           ./contexts/output/security/default.nix
         ];
-        home-manager.enable = true;
-        systemd.user.startServices = "sd-switch";
         environment.systemPackages = [
           pkgs.nixos-generators
         ];
