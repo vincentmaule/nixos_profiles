@@ -37,8 +37,6 @@
 
     users.mutableUsers = false;
 
-    programs.ssh.enable = true;
-
     environment.systemPackages = [
       pkgs.yubikey-manager
       pkgs.yubikey-agent
