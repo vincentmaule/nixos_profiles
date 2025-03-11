@@ -2,5 +2,5 @@
 cd ..
 nix flake update --extra-experimental-features "nix-command flakes"
 git add .
-git commit -S -a -m "Remove SSH Option, not an option."
+git commit -S -a -m "Make Default the experimental-features."
 git push
