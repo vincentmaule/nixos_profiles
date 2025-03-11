@@ -12,7 +12,7 @@
         auto-optimise-store = true;
         allowed-users = [ "@wheel" ];
         trusted-users = [ "@wheel" ];
-        lib.mkDefault experimental-features = "nix-command flakes";
+        experimental-features = lib.mkDefault "nix-command flakes";
       };
     };
 
