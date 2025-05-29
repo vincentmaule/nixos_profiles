@@ -2,5 +2,5 @@
 cd ..
 nix flake update --extra-experimental-features "nix-command flakes"
 git add .
-git commit -S -a -m "Make Default the experimental-features P2."
+git commit -S -a -m "Update to 25.05."
 git push

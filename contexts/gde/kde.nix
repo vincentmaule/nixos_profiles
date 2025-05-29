@@ -49,11 +49,12 @@
         openFirewall = true;
     };
   };
-
+  /*
   systemd.user.services.add_ssh_keys = {
     script = ''
       ssh-add $HOME/.ssh/id_rsa
     '';
     wantedBy = [ "multi-user.target" ];
   };
+  */
 }
