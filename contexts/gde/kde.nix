@@ -10,6 +10,8 @@
     partition-manager.enable = true;
   };
 
+  networking.networkmanager.enable = true;
+
   security = {
     apparmor.enable = true;
     rtkit.enable = true;

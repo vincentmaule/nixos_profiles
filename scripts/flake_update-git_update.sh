@@ -2,5 +2,5 @@
 cd ..
 nix flake update --extra-experimental-features "nix-command flakes"
 git add .
-git commit -S -a -m "Update to 25.05."
+git commit -S -a -m "Add enableRedistributableFirmware, Network Manager, and wireless networking."
 git push

@@ -22,5 +22,7 @@
         allowUnfreePredicate = (_: true);
       };
     };
+
+    hardware.enableRedistributableFirmware = true;
   };
 }
