@@ -53,6 +53,7 @@
 
       wlan = {inputs, config, ... }: {
         imports = [
+          ./contexts/output/wireless/wlan/default.nix
           ./contexts/output/wireless/wlan/hidden_wifi_net.nix
         ];
       };
